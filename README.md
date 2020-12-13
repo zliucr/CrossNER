@@ -47,7 +47,7 @@ Vocabulary overlaps between domains (%). Reuters denotes the Reuters News domain
 
 ## Domain-Adaptive Pre-Training (DAPT)
 
-#### configurations
+#### Configurations
 - ```--train_data_file:``` The file path of the pre-training corpus.
 - ```--output_dir:``` The output directory where the pre-trained model is saved.
 - ```--model_name_or_path:``` Continue pre-training on which model.
