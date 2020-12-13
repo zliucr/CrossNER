@@ -1,9 +1,9 @@
 # CrossNER
 <img src="imgs/pytorch-logo-dark.png" width="10%"> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<img align="right" src="imgs/HKUST.jpg" width="20%">
+<img align="right" src="imgs/HKUST.jpg" width="15%">
 
-CrossNER: Evaluating Cross-Domain Named Entity Recognition (Accepted in AAAI-2021 [[Paper Link](https://arxiv.org/abs/2012.04373)]))
+[CrossNER: Evaluating Cross-Domain Named Entity Recognition](https://arxiv.org/abs/2012.04373) (Accepted in AAAI-2021)
 
 CrossNER is a fully-labeled collected of named entity recognition (NER) data spanning over five diverse domains (Politics, Science, Music, Literature, and AI) with specialized entity categories for different domains. Additionally, CrossNER also includes unlabeled domain-related corpora for the corresponding five domains. We hope that our collected dataset (CrossNER) will catalyze research in the NER domain adaptation area.
 
