@@ -28,6 +28,7 @@ Data statistics of unlabeled domain corpora, labeled NER samples and entity cate
 
 ### Data Examples
 Examples for the five domains. We underline the annotated entities with the corresponding annotations in the brackets.
+
 <img src="imgs/examples.png" width=100%/>
 
 ### Domain Overlaps
