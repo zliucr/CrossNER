@@ -74,24 +74,25 @@ Directly fine-tune the pre-trained model (span-level + integrated corpus) to the
 ```
 
 ### Jointly Train
-Initialize the model with based on the pre-trained model (span-level + integrated corpus). Then, jointly train the model with the source and target (politics) domain data.
+Initialize the model with the pre-trained model (span-level + integrated corpus). Then, jointly train the model with the source and target (politics) domain data.
 ```console
 ❱❱❱ python main.py --exp_name politics_jointly_train --exp_id 1 --num_tag 19 --conll --joint --ckpt politics_spanlevel_integrated/pytorch_model.bin --tgt_dm politics
 ```
 
 ### Pre-train then Fine-tune
-Initialize the model with based on the pre-trained model (span-level + integrated corpus). Then, pre-train the model on the source domain data before fine-tuning to the target (politics) domain data.
+Initialize the model with the pre-trained model (span-level + integrated corpus). Then fine-tune it to the target (politics) domain after pre-training on the source domain data.
 ```console
 ❱❱❱ python main.py --exp_name politics_pretrain_then_finetune --exp_id 1 --num_tag 19 --conll --ckpt politics_spanlevel_integrated/pytorch_model.bin --tgt_dm politics --batch_size 16
 ```
 
 ### BiLSTM-CRF ([Lample et al. 2016](https://www.aclweb.org/anthology/N16-1030.pdf))
-Politics domain. Word+Char level (using glove.6B.300d.txt for word-level embeddings and torchtext.vocab.CharNGram() for character-level embeddings). Same setting for the Coach baseline.
+Jointly train BiLSTM-CRF (word+Char level) on the source domain and target (politics) domain. (we use glove.6B.300d.txt for word-level embeddings and torchtext.vocab.CharNGram() for character-level embeddings).
 ```console
 ❱❱❱ python main.py --exp_name politics_bilstm_wordchar --exp_id 1 --num_tag 19 --tgt_dm politics --bilstm --dropout 0.3 --lr 1e-3 --usechar --emb_dim 400
 ```
 
 ### Coach ([Liu et al. 2020](https://www.aclweb.org/anthology/2020.acl-main.3.pdf))
+Jointly train Coach (word+Char level) on the source domain and target (politics) domain.
 ```console
 ❱❱❱ python main.py --exp_name politics_coach_wordchar --exp_id 1 --num_tag 3 --entity_enc_hidden_dim 200 --tgt_dm politics --coach --dropout 0.5 --lr 1e-4 --usechar --emb_dim 400
 ```
