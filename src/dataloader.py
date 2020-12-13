@@ -186,8 +186,6 @@ def load_corpus(tgt_dm):
 
 
 def get_dataloader(params):
-    # logger.info("Load all data")
-    # inputs_train, labels_train = read_ner("ner_data/final_%s/%s.txt" % (params.tgt_dm, params.tgt_dm), params.tgt_dm)
     logger.info("Load training set data")
     inputs_train, labels_train = read_ner("ner_data/%s/train.txt" % params.tgt_dm, params.tgt_dm)
     if params.n_samples != -1:
@@ -258,8 +256,8 @@ def get_dataloader(params):
 
     if params.conll and params.joint:
         conll_inputs_train, conll_labels_train = read_ner("ner_data/conll2003/train.txt", params.tgt_dm)
-        inputs_train = inputs_train * 50    # 10 or 50
-        labels_train = labels_train * 50    # 10 or 50
+        inputs_train = inputs_train * 50    # augment the target domain data to balance the source and target domain data
+        labels_train = labels_train * 50
         inputs_train = inputs_train + conll_inputs_train
         labels_train = labels_train + conll_labels_train
 
