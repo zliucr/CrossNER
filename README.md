@@ -74,13 +74,13 @@ Directly fine-tune the pre-trained model (span-level + integrated corpus) to the
 ```
 
 ### Jointly Train
-Initialize the model with based on the pre-trained model (span-level + integrated corpus). Then, jointly train the model with the source and target target domain data.
+Initialize the model with based on the pre-trained model (span-level + integrated corpus). Then, jointly train the model with the source and target (politics) domain data.
 ```console
 ❱❱❱ python main.py --exp_name politics_jointly_train --exp_id 1 --num_tag 19 --conll --joint --ckpt politics_spanlevel_integrated/pytorch_model.bin --tgt_dm politics
 ```
 
 ### Pre-train then Fine-tune
-Initialize the model with based on the pre-trained model (span-level + integrated corpus). Then, pre-train the model on the source domain data before fine-tuning to the target domain data.
+Initialize the model with based on the pre-trained model (span-level + integrated corpus). Then, pre-train the model on the source domain data before fine-tuning to the target (politics) domain data.
 ```console
 ❱❱❱ python main.py --exp_name politics_pretrain_then_finetune --exp_id 1 --num_tag 19 --conll --ckpt politics_spanlevel_integrated/pytorch_model.bin --tgt_dm politics --batch_size 16
 ```
