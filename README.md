@@ -46,7 +46,12 @@ Vocabulary overlaps between domains (%). Reuters denotes the Reuters News domain
 - Install transformers (Tested in transformers 3.0.2)
 
 ## Domain-Adaptive Pre-Training (DAPT)
-- ```--train_data_file:``` the file path of the pre-training corpus.
+
+#### configurations
+- ```--train_data_file:``` The file path of the pre-training corpus.
+- ```--output_dir:``` The output directory where the pre-trained model is saved.
+- ```--model_name_or_path:``` Continue pre-training on which model.
+
 ```console
 ❱❱❱ python run_language_modeling.py --output_dir=politics_spanlevel_integrated --model_type=bert --model_name_or_path=bert-base-cased --do_train --train_data_file=corpus/politics_integrated.txt --mlm
 ```
@@ -63,19 +68,19 @@ This example is for span-level pre-training using integrated corpus in the polit
 - ```--emb_file:``` Word-level embeddings file path.
 
 ### Directly Fine-tune
-Politics domain. Using the pre-trained model (span-level + integrated corpus).
+Directly fine-tune the pre-trained model (span-level + integrated corpus) to the target domain (politics domain).
 ```console
 ❱❱❱ python main.py --exp_name politics_directly_finetune --exp_id 1 --num_tag 19 --ckpt politics_spanlevel_integrated/pytorch_model.bin --tgt_dm politics --batch_size 16
 ```
 
 ### Jointly Train
-Politics domain. Using the pre-trained model (span-level + integrated corpus).
+Initialize the model with based on the pre-trained model (span-level + integrated corpus). Then, jointly train the model with the source and target target domain data.
 ```console
 ❱❱❱ python main.py --exp_name politics_jointly_train --exp_id 1 --num_tag 19 --conll --joint --ckpt politics_spanlevel_integrated/pytorch_model.bin --tgt_dm politics
 ```
 
 ### Pre-train then Fine-tune
-Politics domain. Using the pre-trained model (span-level + integrated corpus).
+Initialize the model with based on the pre-trained model (span-level + integrated corpus). Then, pre-train the model on the source domain data before fine-tuning to the target domain data.
 ```console
 ❱❱❱ python main.py --exp_name politics_pretrain_then_finetune --exp_id 1 --num_tag 19 --conll --ckpt politics_spanlevel_integrated/pytorch_model.bin --tgt_dm politics --batch_size 16
 ```
@@ -92,7 +97,7 @@ Politics domain. Word+Char level (using glove.6B.300d.txt for word-level embeddi
 ```
 
 ## Other Notes
-- In the aforementioned baselines, we provide running commands for the politics domain as an example. The running commands for other target domains can be found in the [run.sh](run.sh) file.
+- In the aforementioned baselines, we provide running commands for the politics target domain as an example. The running commands for other target domains can be found in the [run.sh](run.sh) file.
 
 ## Bug Report
 - Feel free to create an issue or send an email to zihan.liu@connect.ust.hk.
