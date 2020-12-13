@@ -1,7 +1,7 @@
 # CrossNER
 <img src="imgs/pytorch-logo-dark.png" width="10%"> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<img align="right" src="imgs/HKUST.jpg" width="15%">
+<img align="right" src="imgs/HKUST.jpg" width="20%">
 
 CrossNER: Evaluating Cross-Domain Named Entity Recognition (Accepted in AAAI-2021 [[Paper Link](https://arxiv.org/abs/2012.04373)]))
 
