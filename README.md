@@ -51,6 +51,7 @@ This example is for span-level pre-training using integrated corpus in the polit
 ## Baselines
 
 #### Configurations
+- ```--tgt_dm:``` Target domain that the model needs to adapt to.
 - ```--conll:``` Using source domain data (News domain from CoNLL 2003) for pre-training.
 - ```--joint:``` Jointly train using source and target domain data.
 - ```--num_tag:``` Number of label types for the target domain (we put the details in src/dataloader.py).
