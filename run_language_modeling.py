@@ -235,17 +235,10 @@ def main():
 
     parser = HfArgumentParser((ModelArguments, DataTrainingArguments, TrainingArguments))
     model_args, data_args, training_args = parser.parse_args_into_dataclasses()
-
-    print("save_steps (before): %d" % training_args.save_steps)
-    print("number of epoch (before): %d" % training_args.num_train_epochs)
-    print("mlm probability (before): %.4f" % data_args.mlm_probability)
     training_args.save_steps = 10000
     training_args.num_train_epochs = 15
     data_args.mlm_probability = 0.2
-    print("save_steps (after): %d" % training_args.save_steps)
-    print("number of epoch (after): %d" % training_args.num_train_epochs)
-    print("mlm probability (after): %.4f" % data_args.mlm_probability)
-
+    
     if data_args.eval_data_file is None and training_args.do_eval:
         raise ValueError(
             "Cannot do evaluation without an evaluation data file. Either supply a file to --eval_data_file "
