@@ -74,7 +74,7 @@ Politics domain. Word+Char level (using glove.6B.300d.txt for word-level embeddi
 ```
 
 ## Other Notes
-- In the aforementioned baselines, we provide running commands for the politics domain as an example. The running commands for other target domains can be found in the ```run.sh``` file.
+- In the aforementioned baselines, we provide running commands for the politics domain as an example. The running commands for other target domains can be found in the [run.sh](run.sh) file.
 
 ## Bug Report
 - Feel free to create an issue or send an email to zihan.liu@connect.ust.hk.
