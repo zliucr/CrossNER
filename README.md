@@ -7,7 +7,7 @@
 
 CrossNER is a fully-labeled collected of named entity recognition (NER) data spanning over five diverse domains (Politics, Natural Science, Music, Literature, and Artificial Intelligence) with specialized entity categories for different domains. Additionally, CrossNER also includes unlabeled domain-related corpora for the corresponding five domains. We hope that our collected dataset (CrossNER) will catalyze research in the NER domain adaptation area.
 
-You can have [**a quick overview of this paper**]((https://medium.com/@zihanliu1026/crossner-evaluating-cross-domain-named-entity-recognition-1a3ee2c1c42b)) through our blog. If you use the dataset in an academic paper, please consider citing the following paper.
+You can have [**a quick overview of this paper**](https://zihanliu1026.medium.com/crossner-evaluating-cross-domain-named-entity-recognition-1a3ee2c1c42b) through our blog. If you use the dataset in an academic paper, please consider citing the following paper.
 <pre>
 @article{liu2020crossner,
       title={CrossNER: Evaluating Cross-Domain Named Entity Recognition}, 
