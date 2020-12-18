@@ -27,9 +27,9 @@ Data statistics of unlabeled domain corpora, labeled NER samples and entity cate
 <img src="imgs/datastatistics.png" width=100%/>
 
 ### Data Examples
-Examples for the five domains. We underline the annotated entities with the corresponding annotations in the brackets.
+Data examples for the collected five domains.
 
-<img src="imgs/examples.png" width=100%/>
+<img src="imgs/examples_v2.png" width=100%/>
 
 ### Domain Overlaps
 Vocabulary overlaps between domains (%). Reuters denotes the Reuters News domain, “Science” denotes the natural science domain and “Litera.” denotes the literature domain.
