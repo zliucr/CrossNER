@@ -27,7 +27,7 @@ Data statistics of unlabeled domain corpora, labeled NER samples and entity cate
 <img src="imgs/datastatistics.png" width=100%/>
 
 ### Data Examples
-Data examples for the collected five domains.
+Data examples for the collected five domains. Each domain has its specialized entity categories.
 
 <img src="imgs/examples_v2.png" width=100%/>
 
