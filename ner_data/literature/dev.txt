@@ -600,7 +600,7 @@ on	O
 '	O
 Anarchist	B-misc
 and	O
-Synergetic	I-misc
+Synergetic	B-misc
 Politics	I-misc
 '	O
 in	O
@@ -948,7 +948,7 @@ the	O
 Potomac	B-location
 River	I-location
 in	O
-Virginia	I-location
+Virginia	B-location
 on	O
 Father	B-event
 's	I-event

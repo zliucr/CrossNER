@@ -1641,7 +1641,7 @@ The	O
 study	O
 claimed	O
 precise	O
-CRISPR	I-misc
+CRISPR	B-misc
 and	O
 homology-directed	B-misc
 repair	I-misc

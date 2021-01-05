@@ -2420,7 +2420,7 @@ digital	B-field
 signal	I-field
 processing	I-field
 or	O
-signal	I-field
+signal	B-field
 processing	I-field
 ,	O
 the	O
@@ -3828,9 +3828,9 @@ October	O
 where	O
 the	O
 Weidner	B-product
-Machine	I-organisation
-Translation	I-organisation
-System	I-organisation
+Machine	I-product
+Translation	I-product
+System	I-product
 hailed	O
 a	O
 hoped-for	O
@@ -5623,8 +5623,8 @@ iPod	B-product
 Touch	I-product
 uses	O
 VoiceOver	B-product
-speech	I-task
-synthesis	I-task
+speech	I-product
+synthesis	I-product
 accessibility	O
 .	O
 
@@ -5971,7 +5971,7 @@ inference	B-task
 engine	I-task
 s	O
 and	O
-extraction	I-task
+extraction	B-task
 ;	O
 support	B-task
 for	I-task

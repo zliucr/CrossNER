@@ -280,12 +280,7 @@ the	O
 Golf	B-misc
 at	O
 the	O
-2016	I-event
-Summer	I-event
-Olympics	I-event
-of	O
-the	O
-2016	I-event
+2016	B-event
 Summer	I-event
 Olympics	I-event
 .	O
@@ -9396,8 +9391,8 @@ Jeremy	B-person
 received	O
 Grammy	B-award
 Award	I-award
-nominations	O
-for	O
+nominations	I-award
+for	I-award
 Best	I-award
 Rock	I-award
 Song	I-award
@@ -9639,7 +9634,7 @@ be	O
 called	O
 planets	O
 or	O
-Pluto	I-astronomicalobject
+Pluto	B-astronomicalobject
 would	O
 have	O
 to	O

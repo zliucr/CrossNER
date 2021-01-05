@@ -16481,7 +16481,7 @@ Falls	I-location
 White	B-location
 Bay	I-location
 -	O
-Labrador	I-location
+Labrador	B-location
 .	O
 
 After	O
@@ -18754,7 +18754,7 @@ the	O
 1790s	O
 used	O
 Democratic	B-politicalparty
-Party	I-politician
+Party	I-politicalparty
 as	O
 a	O
 term	O
@@ -19509,7 +19509,7 @@ behalf	O
 of	O
 the	O
 Nationalist	B-politicalparty
-Party	I-politician
+Party	I-politicalparty
 and	O
 since	O
 then	O
@@ -26487,7 +26487,7 @@ held	O
 a	O
 conference	O
 at	O
-Hampton	I-location
+Hampton	B-location
 Roads	I-location
 with	O
 three	O

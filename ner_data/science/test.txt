@@ -424,7 +424,7 @@ the	O
 released	O
 DHA	B-chemicalcompound
 by	O
-CYP 450.00	B-enzyme
+CYP450	B-enzyme
 epoxidases	I-enzyme
 .	O
 
@@ -1424,7 +1424,7 @@ nominee	O
 ,	O
 winning	O
 the	O
-Academy	I-award
+Academy	B-award
 Award	I-award
 for	I-award
 Best	I-award
@@ -4077,7 +4077,7 @@ Institut	I-organisation
 für	I-organisation
 Physik	I-organisation
 (	O
-KWIP	I-organisation
+KWIP	B-organisation
 ,	O
 Kaiser	B-organisation
 Wilhelm	I-organisation
@@ -8765,7 +8765,7 @@ in	O
 the	O
 Nobel	B-award
 Prize	I-award
-in	O
+in	I-award
 Physiology	I-award
 or	I-award
 Medicine	I-award
@@ -9635,7 +9635,7 @@ also	O
 played	O
 at	O
 1990	O
-Asian	I-event
+Asian	B-event
 Games	I-event
 ,	O
 1991	O
@@ -18879,7 +18879,7 @@ in	O
 El	B-location
 Cajon	I-location
 ,	O
-California	I-location
+California	B-location
 ,	O
 along	O
 with	O

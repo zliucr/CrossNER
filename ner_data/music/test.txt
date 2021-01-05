@@ -8234,7 +8234,7 @@ metal	I-musicgenre
 by	O
 several	O
 critics.	O
-Fricke	I-person
+Fricke	B-person
 David	I-person
 .	O
 
@@ -8381,9 +8381,9 @@ two	O
 major	O
 organizers	O
 for	O
-classic	B-musicgenre
-drum	I-musicalinstrument
-corps	O
+classic	B-misc
+drum	I-misc
+corps	I-misc
 )	O
 .	O
 
@@ -8393,7 +8393,6 @@ of	O
 those	O
 include	O
 bagad	B-band
-où	O
 (	O
 Breton	B-band
 pipe	I-band
@@ -11975,7 +11974,6 @@ of	O
 those	O
 include	O
 bagad	B-band
-où	I-misc
 (	O
 Breton	B-misc
 pipe	I-misc
@@ -14346,7 +14344,7 @@ International	B-organisation
 DanceSport	I-organisation
 Federation	I-organisation
 (	O
-IDSF	I-organisation
+IDSF	B-organisation
 )	O
 ,	O
 is	O

@@ -664,7 +664,7 @@ units	O
 by	O
 means	O
 of	O
-signal	I-field
+signal	B-field
 processing	I-field
 techniques	O
 such	O
@@ -3225,7 +3225,7 @@ headquartered	O
 in	O
 Oakland	B-location
 ,	O
-California	I-location
+California	B-location
 .	O
 
 She	O
@@ -4053,7 +4053,7 @@ with	O
 mobile	O
 devices	O
 via	O
-language	I-field
+language	B-field
 processing	I-field
 interfaces	O
 .	O
@@ -6650,7 +6650,7 @@ is	O
 not	O
 relevant	O
 in	O
-machine	I-task
+machine	B-task
 translation	I-task
 ,	O
 but	O
