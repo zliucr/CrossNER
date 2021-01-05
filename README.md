@@ -3,6 +3,8 @@
 
 <img align="right" src="imgs/HKUST.jpg" width="12%">
 
+**NEW (2021/1/5):** Fixed several annotation errors (thanks for the help from Youliang Yuan).
+
 **CrossNER: Evaluating Cross-Domain Named Entity Recognition** (**Accepted in AAAI-2021**) [[PDF]](https://arxiv.org/abs/2012.04373) 
 
 CrossNER is a fully-labeled collected of named entity recognition (NER) data spanning over five diverse domains (Politics, Natural Science, Music, Literature, and Artificial Intelligence) with specialized entity categories for different domains. Additionally, CrossNER also includes unlabeled domain-related corpora for the corresponding five domains. We hope that our collected dataset (CrossNER) will catalyze research in the NER domain adaptation area.
